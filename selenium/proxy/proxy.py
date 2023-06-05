@@ -28,7 +28,7 @@ def ceshi():
 
     # 创建Proxy对象
     proxy_arr = [
-        '--proxy-server=http://36.134.91.82:8888',
+        '--proxy-server=http://183.247.211.41:30001',
         #'--proxy-server=http://183.247.211.50:30001',
         #'--proxy-server=http://122.9.101.6:8888',
     ]
@@ -73,16 +73,51 @@ def ceshi():
     print(html)'''
 
 
-''' boss.implicitly_wait(10)
+    ''' 
+    boss.implicitly_wait(10)
     ul = boss.find_element(By.CLASS_NAME,'page-job-inner')
     list = ul.find_elements(By.CLASS_NAME,'job-card-wrapper')
-    print(ul)'''
+    print(ul)
+    '''
 #    for li in list:
 
-'''        print('bbb')
+    '''        
+        print('bbb')
         biaoti = li.find_elements(By.CLASS_NAME, 'company-info a')
         print(biaoti)
-'''
+    '''
+
+def isUseful():
+    url = "http://httpbin.org/ip"
+    proxy_pool = [
+        "http://27.192.202.158:9000",
+        "http://36.134.91.82:8888",
+        "http://183.236.232.160:8080",
+        "http://183.247.211.41:30001",
+    ]
+
+    headers = {
+        "User-Agent": "Mozilla/5.0",
+    }
+
+    for proxy in proxy_pool:
+        proxies = {
+            "http": proxy,
+            "https": proxy,
+        }
+
+        start_time = time.time()
+        try:
+            response = requests.get(url, proxies=proxies, headers=headers, timeout=5)
+            elapsed_time = time.time() - start_time
+
+            if response.status_code == 200:
+                print(f"代理IP {proxy} 可用，响应时间：{elapsed_time:.2f}秒")
+            else:
+                print(f"代理IP {proxy} 请求失败，状态码：{response.status_code}")
+        except requests.exceptions.RequestException as e:
+            print(f"代理IP {proxy} 发生异常：{e}")
 
 if __name__ == "__main__":
+    #isUseful()
     ceshi()
