@@ -90,6 +90,7 @@ def ceshi():
 def isUseful():
     url = "http://httpbin.org/ip"
     proxy_pool = [
+        "http://117.64.236.35:9999"
         "http://27.192.202.158:9000",
         "http://36.134.91.82:8888",
         "http://183.236.232.160:8080",
@@ -119,5 +120,5 @@ def isUseful():
             print(f"代理IP {proxy} 发生异常：{e}")
 
 if __name__ == "__main__":
-    #isUseful()
-    ceshi()
+    isUseful()
+    #ceshi()
