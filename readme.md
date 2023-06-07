@@ -87,3 +87,17 @@
    - 设置agent
    - 设置proxy
 3. 判断使用airtest抓取数据（app）
+
+- 封装框架
+  - agent
+  - proxy
+  - mysql
+  - redis
+  - 传参
+  - cookie
+  - 维护一个proxy库
+  - 获取房价的爬虫
+  - 各资讯网站抓取关键词的讯息
+  - 各个网站的抓取示意
+  - 抓取指定类目商品信息
+  - PhantomJS?
