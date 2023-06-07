@@ -48,7 +48,7 @@ driver.get(url)
 
 # 等待页面加载完成（可选）  
 wait = WebDriverWait(driver, 60)  # 设置等待时间，根据实际情况调整
-ajax_element = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "search-job-result")))
+ajax_element = wait.until(EC.visibility_of_element_located((By.ID, "wrap")))
 data = ajax_element.text
 
 # 获取页面源代码  
