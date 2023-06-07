@@ -43,16 +43,16 @@ for key, value in headers.items():
     driver.execute_cdp_cmd('Network.setExtraHTTPHeaders', {'headers': {key: value}})
 
 # 访问目标网页
-url = "https://www.zhipin.com/job_detail/"  # 替换为你要访问的JavaScript渲染页面的URL
+url = "https://www.zhipin.com/web/geek/job?query=%E8%BF%90%E8%90%A5&city=101010100"  # 替换为你要访问的JavaScript渲染页面的URL
 driver.get(url)
 
 # 等待页面加载完成（可选）  
-#wait = WebDriverWait(driver, 60)  # 设置等待时间，根据实际情况调整
-#ajax_element = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "search-job-result")))
-#data = ajax_element.text
-print(driver.page_source)
+wait = WebDriverWait(driver, 60)  # 设置等待时间，根据实际情况调整
+ajax_element = wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "search-job-result")))
+data = ajax_element.text
+
 # 获取页面源代码  
-#print(data)
+print(data)
 # 在此处添加提取数据的逻辑，例如使用BeautifulSoup或lxml解析HTML  
 
 # 关闭webdriver  
