@@ -52,6 +52,15 @@
 - [airtest api](https://airtest.readthedocs.io/zh_CN/latest/all_module/airtest.core.api.html)
 
 # App 自动化
+- uiautomator
+- [下载andrio工具包 - Command line tools only](https://developer.android.com/studio)
+    `
+        pip3 install uiautomator
+        brew install openjdk
+        添加环境变量
+        vim ~/.zshrc
+        export PATH="/usr/local/opt/openjdk/bin:$PATH"
+    `
 - Airtest
 - Poco
 
