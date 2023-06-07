@@ -94,16 +94,19 @@
 - 封装框架
   - agent
   - proxy
-  - mysql
-  - redis
   - 传参
   - cookie
+  - mysql
+  - redis
   - 维护一个proxy库
   - 获取房价的爬虫
   - 各资讯网站抓取关键词的讯息
   - 各个网站的抓取示意
   - 抓取指定类目商品信息
   - PhantomJS?
+  - scrapy+selenium
+  - scrapy+soup
+
 [如何判断一个代理ip是否可用](https://blog.csdn.net/u011394059/article/details/104633627)
 [国内免费代理](https://www.kuaidaili.com/free/)
 
