@@ -122,3 +122,5 @@
     # 生成模板
     scrapy genspider -t csvfeed demo demo.com
 `
+
+# 安装包使用命令：python3.7 -m pip install scrapy
