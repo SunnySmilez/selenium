@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 def scrape_images():
     options = webdriver.ChromeOptions()
     # 设置 WebDriver 的路径
-    webdriver_service = Service('/Users/zhouzhi/Downloads/chromedriver_mac_arm64/chromedriver')
+    webdriver_service = Service('/Users/zhouzhi/Downloads/chromedriver_mac64/chromedriver')
 
     # 创建 Chrome WebDriver
     driver = webdriver.Chrome(service=webdriver_service, options=options)

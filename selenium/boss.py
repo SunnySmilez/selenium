@@ -17,7 +17,6 @@ def webDriver():
 
     # 指定浏览器驱动路径
     driver_path = "/Users/zhouzhi/Downloads/chromedriver_mac64/chromedriver"  # 替换为你的ChromeDriver路径
-    #driver_path = '/Users/zhouzhi/Downloads/chromedriver_mac_arm64/chromedriver'
 
     # 创建Chrome驱动程序的Service对象
     service = Service(driver_path)

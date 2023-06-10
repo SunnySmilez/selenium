@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from bs4 import BeautifulSoup
 
 # 设置 ChromeDriver 的路径
-webdriver_service = Service('/Users/zhouzhi/Downloads/chromedriver_mac_arm64/chromedriver')
+webdriver_service = Service('/Users/zhouzhi/Downloads/chromedriver_mac64/chromedriver')
 
 # 设置 ChromeDriver 的选项
 chrome_options = Options()

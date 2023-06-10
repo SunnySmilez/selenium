@@ -7,7 +7,7 @@ from selenium import webdriver
 def Beau():
     # 初始化 ChromeDriver
 
-    webdriver_service = Service('/Users/zhouzhi/Downloads/chromedriver_mac_arm64/chromedriver')
+    webdriver_service = Service('/Users/zhouzhi/Downloads/chromedriver_mac64/chromedriver')
     driver = webdriver.Chrome(service=webdriver_service)
 
     # 待爬取的 URL

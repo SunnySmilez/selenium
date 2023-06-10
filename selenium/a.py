@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 
 def demo():
     # 配置ChromeDriver路径和选项
-    driver_path = '/Users/zhouzhi/Downloads/chromedriver_mac_arm64/chromedriver'
+    driver_path = '/Users/zhouzhi/Downloads/chromedriver_mac64/chromedriver'
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # 无头模式，不显示浏览器窗口
 
