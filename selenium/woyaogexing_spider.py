@@ -54,6 +54,12 @@ def save_image(url, filename):
     else:
         print(f"Failed to download image {filename}.")
 
+# 实现一个demo函数 对www.baidu.com发起request请求
+def demo():
+    response = requests.get('https://www.baidu.com')
+    print(response.status_code)
+    print(response.text)
+
 if __name__ == '__main__':
     images = scrape_images()
 
